@@ -78,7 +78,7 @@ local function create_procedural_ore(input_name, input_tint)
       --factoriopedia_simulation = simulations.factoriopedia_calcite,
     },
     {
-      probability_expression = 0
+      probability_expression = 0,
     },
     {
       icon_subfolder = "",
@@ -107,7 +107,10 @@ data:extend(
           --factoriopedia_simulation = simulations.factoriopedia_calcite,
         },
         {
-          probability_expression = 0
+          base_density = 5,
+          regular_rq_factor_multiplier = 0.7,
+          starting_rq_factor_multiplier = 0.3,
+          candidate_spot_count = 10, 
         },
         {
           icon_subfolder = "ores_malcom/covellite",
@@ -128,7 +131,10 @@ data:extend(
           --factoriopedia_simulation = simulations.factoriopedia_calcite,
         },
         {
-          probability_expression = 0
+          base_density = 5,
+          regular_rq_factor_multiplier = 0.7,
+          starting_rq_factor_multiplier = 0.3,
+          candidate_spot_count = 10, 
         },
         {
           icon_subfolder = "ores_malcom/malachite",
@@ -149,7 +155,10 @@ data:extend(
           --factoriopedia_simulation = simulations.factoriopedia_calcite,
         },
         {
-          probability_expression = 0
+          base_density = 5,
+          regular_rq_factor_multiplier = 0.7,
+          starting_rq_factor_multiplier = 0.3,
+          candidate_spot_count = 10, 
         },
         {
           icon_subfolder = "ores_malcom/tenorite",
@@ -170,7 +179,10 @@ data:extend(
         --factoriopedia_simulation = simulations.factoriopedia_calcite,
       },
       {
-        probability_expression = 0
+        base_density = 5,
+        regular_rq_factor_multiplier = 0.7,
+        starting_rq_factor_multiplier = 0.3,
+        candidate_spot_count = 10, 
       },
       {
         icon_subfolder = "ores_malcom/pyrite",
@@ -191,7 +203,10 @@ data:extend(
         --factoriopedia_simulation = simulations.factoriopedia_calcite,
       },
       {
-        probability_expression = 0
+        base_density = 5,
+        regular_rq_factor_multiplier = 0.7,
+        starting_rq_factor_multiplier = 0.3,
+        candidate_spot_count = 10, 
       },
       {
         icon_subfolder = "ores_malcom/siderite",
@@ -212,7 +227,10 @@ data:extend(
         --factoriopedia_simulation = simulations.factoriopedia_calcite,
       },
       {
-        probability_expression = 0
+        base_density = 5,
+        regular_rq_factor_multiplier = 0.7,
+        starting_rq_factor_multiplier = 0.3,
+        candidate_spot_count = 10, 
       },
       {
         icon_subfolder = "ores_malcom/hematite",
@@ -236,7 +254,10 @@ data:extend(
           --factoriopedia_simulation = simulations.factoriopedia_calcite,
         },
         {
-          probability_expression = 0
+          base_density = 6,
+          regular_rq_factor_multiplier = 0.7,
+          starting_rq_factor_multiplier = 0.3,
+          candidate_spot_count = 10, 
         },
         {
           icon_subfolder = "ores_malcom/low-quality/covellite",
@@ -257,7 +278,10 @@ data:extend(
           --factoriopedia_simulation = simulations.factoriopedia_calcite,
         },
         {
-          probability_expression = 0
+          base_density = 6,
+          regular_rq_factor_multiplier = 0.7,
+          starting_rq_factor_multiplier = 0.3,
+          candidate_spot_count = 10, 
         },
         {
           icon_subfolder = "ores_malcom/low-quality/malachite",
@@ -278,7 +302,10 @@ data:extend(
           --factoriopedia_simulation = simulations.factoriopedia_calcite,
         },
         {
-          probability_expression = 0
+          base_density = 6,
+          regular_rq_factor_multiplier = 0.7,
+          starting_rq_factor_multiplier = 0.3,
+          candidate_spot_count = 10, 
         },
         {
           icon_subfolder = "ores_malcom//low-quality/tenorite",
@@ -299,7 +326,10 @@ data:extend(
         --factoriopedia_simulation = simulations.factoriopedia_calcite,
       },
       {
-        probability_expression = 0
+        base_density = 6,
+        regular_rq_factor_multiplier = 0.7,
+        starting_rq_factor_multiplier = 0.3,
+        candidate_spot_count = 10, 
       },
       {
         icon_subfolder = "ores_malcom/low-quality/pyrite",
@@ -320,7 +350,10 @@ data:extend(
         --factoriopedia_simulation = simulations.factoriopedia_calcite,
       },
       {
-        probability_expression = 0
+        base_density = 6,
+        regular_rq_factor_multiplier = 0.7,
+        starting_rq_factor_multiplier = 0.3,
+        candidate_spot_count = 10, 
       },
       {
         icon_subfolder = "ores_malcom/low-quality/siderite",
@@ -341,7 +374,10 @@ data:extend(
         --factoriopedia_simulation = simulations.factoriopedia_calcite,
       },
       {
-        probability_expression = 0
+        base_density = 6,
+        regular_rq_factor_multiplier = 0.7,
+        starting_rq_factor_multiplier = 0.3,
+        candidate_spot_count = 10, 
       },
       {
         icon_subfolder = "ores_malcom/low-quality/hematite",
@@ -363,7 +399,10 @@ data:extend(
         --factoriopedia_simulation = simulations.factoriopedia_calcite,
       },
       {
-        probability_expression = 0
+        base_density = 14,
+        regular_rq_factor_multiplier = 1.1,
+        starting_rq_factor_multiplier = 1.15,
+        candidate_spot_count = 20, 
       },
       {
         icon_subfolder = "ores_malcom/fluorite",

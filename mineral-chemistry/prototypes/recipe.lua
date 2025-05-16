@@ -18,7 +18,7 @@ data:extend(
       {
         icon = "__mineral-chemistry__/graphics/icons/froth-floatator.png",
         scale = 0.9,
-        --shift = util.by_pixel(140, 140),
+        --shift = util.by_pixel(0, 0),
       }
     },
 
@@ -61,7 +61,7 @@ data:extend(
       {
         icon = "__mineral-chemistry__/graphics/icons/blast-furnace.png",
         scale = 0.9,
-        --shift = util.by_pixel(140, 140),
+        --shift = util.by_pixel(0, 0),
       }
     },
 
@@ -98,9 +98,9 @@ data:extend(
     icons = 
     {
       {
-        icon = "__mineral-chemistry__/graphics/icons/blast-furnace.png",
+        icon = "__mineral-chemistry__/graphics/icons/cryogenic-plant.png",
         scale = 0.9,
-        --shift = util.by_pixel(140, 140),
+        --shift = util.by_pixel(0, 0),
       }
     },
 
@@ -178,7 +178,7 @@ data:extend(
         icon = "__mineral-chemistry__/graphics/icons/fluid/glycerol-64.png",
         icon_size = 64,
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -220,7 +220,7 @@ data:extend(
         icon = "__mineral-chemistry__/graphics/icons/fluid/glycerol-64.png",
         icon_size = 64,
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -263,7 +263,7 @@ data:extend(
         icon = "__mineral-chemistry__/graphics/icons/fluid/glycerol-64.png",
         icon_size = 64,
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -303,7 +303,7 @@ data:extend(
         icon = "__mineral-chemistry__/graphics/icons/fluid/alpha-linolenic-acid-64.png",
         icon_size = 64,
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -343,7 +343,7 @@ data:extend(
         icon = "__base__/graphics/icons/solid-fuel.png",
         --icon_size = 64,
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -380,10 +380,10 @@ data:extend(
         scale = 0.9
       },
       {
-        icon = "__base__/graphics/icons/solid-fuel.png",
+        icon = "__space-age__/graphics/icons/carbon.png",
         --icon_size = 64,
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -422,7 +422,7 @@ data:extend(
       {
         icon = "__base__/graphics/icons/fluid/petroleum-gas.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -793,7 +793,7 @@ data:extend(
       {
         icon = "__mineral-chemistry__/graphics/icons/ores_malcom/tenorite/tenorite-1.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -837,7 +837,7 @@ data:extend(
       {
         icon = "__mineral-chemistry__/graphics/icons/ores_malcom/hematite/hematite-1.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -883,7 +883,7 @@ data:extend(
       {
         icon = "__mineral-chemistry__/graphics/icons/ores_malcom/malachite/malachite-1.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -927,7 +927,7 @@ data:extend(
       {
         icon = "__mineral-chemistry__/graphics/icons/ores_malcom/siderite/siderite-1.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -973,7 +973,7 @@ data:extend(
       {
         icon = "__mineral-chemistry__/graphics/icons/ores_malcom/covellite/covellite-1.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -1017,7 +1017,7 @@ data:extend(
       {
         icon = "__mineral-chemistry__/graphics/icons/ores_malcom/pyrite/pyrite-1.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -1142,7 +1142,7 @@ data:extend(
       {
         icon = "__mineral-chemistry__/graphics/icons/ores_malcom/fluorite/fluorite-1.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -1261,7 +1261,7 @@ data:extend(
       {
         icon = "__base__/graphics/icons/explosion.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -1343,7 +1343,7 @@ data:extend(
       {
         icon = "__base__/graphics/icons/explosion.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       },
       {
         icon = "__mineral-chemistry__/graphics/icons/slash.png",
@@ -1439,7 +1439,7 @@ data:extend(
     results = 
     {
       {type="fluid", name="covellite-froth", amount = 200},
-      {type = "fluid", name = "water", amount = 1500},
+      {type = "fluid", name = "water", amount = 1500,ignored_by_productivity = 9999},
       {type = "item", name = "slag", amount = 10},
       {type = "item", name = "slag", amount = 4, probability = 0.2},
     },
@@ -1479,7 +1479,7 @@ data:extend(
     results = 
     {
       {type="fluid", name="pyrite-froth", amount = 200},
-      {type = "fluid", name = "water", amount = 1500},
+      {type = "fluid", name = "water", amount = 1500,ignored_by_productivity = 9999},
       {type = "item", name = "slag", amount = 10},
       {type = "item", name = "slag", amount = 4, probability = 0.2},
     },
@@ -1519,7 +1519,7 @@ data:extend(
     results = 
     {
       {type="fluid", name="tenorite-froth", amount = 200},
-      {type = "fluid", name = "water", amount = 1500},
+      {type = "fluid", name = "water", amount = 1500,ignored_by_productivity = 9999},
       {type = "item", name = "slag", amount = 10},
       {type = "item", name = "slag", amount = 4, probability = 0.2},
     },
@@ -1559,7 +1559,7 @@ data:extend(
     results = 
     {
       {type="fluid", name="malachite-froth", amount = 200},
-      {type = "fluid", name = "water", amount = 1500},
+      {type = "fluid", name = "water", amount = 1500,ignored_by_productivity = 9999},
       {type = "item", name = "slag", amount = 10},
       {type = "item", name = "slag", amount = 4, probability = 0.2},
     },
@@ -1599,7 +1599,7 @@ data:extend(
     results = 
     {
       {type="fluid", name="siderite-froth", amount = 200},
-      {type = "fluid", name = "water", amount = 1500},
+      {type = "fluid", name = "water", amount = 1500,ignored_by_productivity = 9999},
       {type = "item", name = "slag", amount = 10},
       {type = "item", name = "slag", amount = 4, probability = 0.2},
     },
@@ -1638,7 +1638,7 @@ data:extend(
     },
     results = 
     {
-      {type="fluid", name="hematite-froth", amount = 200},
+      {type="fluid", name="hematite-froth", amount = 200,ignored_by_productivity = 9999},
       {type = "fluid", name = "water", amount = 1500},
       {type = "item", name = "slag", amount = 10},
       {type = "item", name = "slag", amount = 4, probability = 0.2},
@@ -1678,7 +1678,7 @@ data:extend(
     results = 
     {
       {type = "item", name = "covellite", amount = 4},
-      {type = "fluid", name = "fatty-acids", amount = 180},
+      {type = "fluid", name = "fatty-acids", amount = 180,ignored_by_productivity = 9999},
     },
     crafting_machine_tint =
     {
@@ -1713,7 +1713,7 @@ data:extend(
     results = 
     {
       {type = "item", name = "pyrite", amount = 4},
-      {type = "fluid", name = "fatty-acids", amount = 180},
+      {type = "fluid", name = "fatty-acids", amount = 180,ignored_by_productivity = 9999},
     },
     crafting_machine_tint =
     {
@@ -1748,7 +1748,7 @@ data:extend(
     results = 
     {
       {type = "item", name = "tenorite", amount = 4},
-      {type = "fluid", name = "fatty-acids", amount = 180},
+      {type = "fluid", name = "fatty-acids", amount = 180,ignored_by_productivity = 9999},
     },
     crafting_machine_tint =
     {
@@ -1783,7 +1783,7 @@ data:extend(
     results = 
     {
       {type = "item", name = "malachite", amount = 4},
-      {type = "fluid", name = "fatty-acids", amount = 180},
+      {type = "fluid", name = "fatty-acids", amount = 180,ignored_by_productivity = 9999},
     },
     crafting_machine_tint =
     {
@@ -1818,7 +1818,7 @@ data:extend(
     results = 
     {
       {type = "item", name = "siderite", amount = 4},
-      {type = "fluid", name = "fatty-acids", amount = 180},
+      {type = "fluid", name = "fatty-acids", amount = 180,ignored_by_productivity = 9999},
     },
     crafting_machine_tint =
     {
@@ -1853,7 +1853,7 @@ data:extend(
     results = 
     {
       {type = "item", name = "hematite", amount = 4},
-      {type = "fluid", name = "fatty-acids", amount = 180},
+      {type = "fluid", name = "fatty-acids", amount = 180,ignored_by_productivity = 9999},
     },
     crafting_machine_tint =
     {
@@ -1886,7 +1886,7 @@ data:extend(
       {
         icon = "__mineral-chemistry__/graphics/icons/ores_malcom/low-quality/tenorite/tenorite-1.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -1930,7 +1930,7 @@ data:extend(
       {
         icon = "__mineral-chemistry__/graphics/icons/ores_malcom/low-quality/hematite/hematite-1.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -1976,7 +1976,7 @@ data:extend(
       {
         icon = "__mineral-chemistry__/graphics/icons/ores_malcom/low-quality/malachite/malachite-1.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -2020,7 +2020,7 @@ data:extend(
       {
         icon = "__mineral-chemistry__/graphics/icons/ores_malcom/low-quality/siderite/siderite-1.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -2066,7 +2066,7 @@ data:extend(
       {
         icon = "__mineral-chemistry__/graphics/icons/ores_malcom/low-quality/covellite/covellite-1.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -2110,7 +2110,7 @@ data:extend(
       {
         icon = "__mineral-chemistry__/graphics/icons/ores_malcom/low-quality/pyrite/pyrite-1.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -2158,7 +2158,7 @@ data:extend(
       {
         icon = "__base__/graphics/icons/fluid/water.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -2205,7 +2205,7 @@ data:extend(
       {
         icon = "__base__/graphics/icons/fluid/water.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -2252,7 +2252,7 @@ data:extend(
       {
         icon = "__base__/graphics/icons/fluid/water.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -2299,7 +2299,7 @@ data:extend(
       {
         icon = "__base__/graphics/icons/fluid/water.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -2346,7 +2346,7 @@ data:extend(
       {
         icon = "__base__/graphics/icons/fluid/water.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 
@@ -2393,7 +2393,7 @@ data:extend(
       {
         icon = "__base__/graphics/icons/fluid/water.png",
         scale = 0.6,
-        shift = util.by_pixel(140, 140),
+        shift = util.by_pixel(0, 0),
       }
     },
 

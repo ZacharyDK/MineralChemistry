@@ -210,10 +210,6 @@ data:extend({
             type = "unlock-recipe",
             recipe = "petroleum-gas-charcolation",
           },
-          {
-            type = "unlock-recipe",
-            recipe = "hematite-froth",
-          },
           --recipes
           {
             type = "unlock-recipe",
@@ -366,6 +362,7 @@ data:extend({
             type = "unlock-recipe",
             recipe = "calcium-sulfate-production-alt",
           },
+
           
 
       },

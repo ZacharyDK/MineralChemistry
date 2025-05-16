@@ -10,7 +10,7 @@ local function create_autoplace_control(input_name)
       {"entity-name." .. input_name}
     },
     richness = true,
-    order = "b-d",
+    order = "a-g",
     category = "resource"
   } 
 end
