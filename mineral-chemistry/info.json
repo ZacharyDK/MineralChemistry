@@ -1,0 +1,12 @@
+{
+    "name": "mineral-chemistry",
+    "version": "1.0.2",
+    "title": "Mineral Chemistry",
+    "author": "ZDK, 2025",
+    "factorio_version": "2.0",
+    "dependencies": ["base >= 2.0",
+        "space-age >= 2.0"
+    ],
+    "space_travel_required": true,
+    "description": "Adds Carbonate, oxide, sulfide, and fluoride minerals."
+  }
