@@ -605,7 +605,7 @@ data:extend(
         },
         icon_draw_specification = {scale = 2, shift = {0, -0.3}},
         allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
-        crafting_categories = {"hydraulic-washing","fluorination"},
+        crafting_categories = {"hydraulic-washing","fluorination","cryogenics","chemistry-or-cryogenics"},
         crafting_speed = 2,
         energy_source =
         {

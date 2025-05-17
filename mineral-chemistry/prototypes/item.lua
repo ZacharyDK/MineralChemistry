@@ -229,10 +229,8 @@ data:extend(
       type = "item",
       name = "blast-fuel",
       icon = "__mineral-chemistry__/graphics/icons/blast-fuel.png",
-      fuel_category = "chemical",
+      fuel_category = "blast-furnace",
       fuel_value = "12.2MJ",
-      fuel_acceleration_multiplier = 0.9,
-      fuel_top_speed_multiplier = 1.00,
       subgroup = "raw-material",
       order = "b[chemistry]-b[blast-fuel]",
       inventory_move_sound = item_sounds.solid_fuel_inventory_move,
@@ -254,7 +252,7 @@ data:extend(
       stack_size = 50,
       weight = 1 * kg,
       random_tint_color = item_tints.yellowing_coal,
-      spoil_ticks = 1,
+      spoil_ticks = 60,
       spoil_to_trigger_result = 
       {
         items_per_trigger = 1,

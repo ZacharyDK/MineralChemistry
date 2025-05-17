@@ -1136,13 +1136,12 @@ data:extend(
     icons = 
     {
       {
-        icon = "__mineral-chemistry__/graphics/icons/fluid/sulfur-dioxide.png",
+        icon = "__mineral-chemistry__/graphics/icons/calcium-sulfate.png",
         scale = 0.9
       },
       {
-        icon = "__mineral-chemistry__/graphics/icons/ores_malcom/fluorite/fluorite-1.png",
-        scale = 0.6,
-        shift = util.by_pixel(0, 0),
+        icon = "__mineral-chemistry__/graphics/icons/slash.png",
+        scale = 0.9,
       }
     },
 
@@ -1175,6 +1174,7 @@ data:extend(
     type ="recipe",
     name ="slag-destruction",
     category ="fluorination",
+    subgroup = "fluid",
     energy_required = 8,
     icons = 
     {
@@ -1293,6 +1293,7 @@ data:extend(
     type ="recipe",
     name ="fluoro-slag-destruction",
     category ="fluorination",
+    subgroup = "fluid",
     energy_required = 12,
     icons = 
     {
@@ -1333,6 +1334,7 @@ data:extend(
     type ="recipe",
     name ="dangerous-fluoro-slag-destruction",
     category ="fluorination",
+    subgroup = "fluid",
     energy_required = 8,
     icons = 
     {
@@ -2441,7 +2443,7 @@ data:extend(
       }
     },
     category = "fluorination",
-    --subgroup = "aquilo-processes",
+    subgroup = "aquilo-processes",
     --order = "z[fluoroketone]-e[fluoroketone]",
     auto_recycle = false,
     energy_required = 10,
@@ -2564,6 +2566,7 @@ data:extend(
     type ="recipe",
     name ="destructive-dilute-acid-neutralization",
     category ="chemistry-or-cryogenics",
+    subgroup = "fluid",
     icon ="__mineral-chemistry__/graphics/icons/fluid/sulfuric-acid-dilute-X.png",
     enabled = false,
     --subgroup = "sulfur",
