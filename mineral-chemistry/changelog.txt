@@ -1,0 +1,7 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 5. 17. 2025
+  Major Features:
+    - New mod setting: Optionally change adjusted advanced metallic asteroid crushing to give CuO instead of copper ore
+    - New mod setting: Optionally change Vulcanus production chain such that lava now gives Fe2O3 and CuO, and steel plate requires calcite to cast from molten iron.
+    - New mod setting: Optionally change steel plate recipe to output slag.

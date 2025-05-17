@@ -578,7 +578,14 @@ data:extend(
             rotate = false,
             orientation_to_variation = false
           }
-        }
+        },
+        surface_conditions = 
+        {
+          {
+            property = "pressure",
+            min = 10
+          }
+        },
     },
 
     {
