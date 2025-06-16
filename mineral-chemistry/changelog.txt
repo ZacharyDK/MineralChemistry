@@ -1,5 +1,10 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.1
+Date: 6. 16. 2025
+  Major Features:
+    - Added missing localization
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
 Date: 5. 17. 2025
   Major Features:
     - New mod setting: Optionally change adjusted advanced metallic asteroid crushing to give CuO instead of copper ore
