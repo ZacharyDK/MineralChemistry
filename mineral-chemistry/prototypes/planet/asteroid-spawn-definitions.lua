@@ -7,13 +7,13 @@ asteroid_functions.weighted_average = function(A, B, weight)
   return result
 end
 
-asteroid_functions.nauvis_ratio      = {3, 2, 1 , 0, 0} --4 prometheum? 5 terra?
-asteroid_functions.vulcanus_ratio    = {5, 2, 1 , 0, 0}
-asteroid_functions.gleba_ratio       = {2, 5, 1 , 0, 0}
-asteroid_functions.fulgora_ratio     = {4, 3, 1 , 0, 0}
-asteroid_functions.aquilo_ratio      = {1, 2, 20, 0, 0}
+asteroid_functions.nauvis_ratio      = {3, 2, 1 , 0, 2} --4 prometheum? 5 terra?
+asteroid_functions.vulcanus_ratio    = {5, 2, 1 , 0, 2}
+asteroid_functions.gleba_ratio       = {2, 5, 1 , 0, 3}
+asteroid_functions.fulgora_ratio     = {4, 3, 1 , 0, 2}
+asteroid_functions.aquilo_ratio      = {1, 2, 20, 0, 10}
 asteroid_functions.system_edge_ratio = {3, 5, 2 , 0, 0}
-asteroid_functions.secretas_ratio =    {2, 4 ,10 ,0, 6}
+--asteroid_functions.secretas_ratio =    {2, 4 ,10 ,0, 6} --Secretas has its own that uses gold asteroids
 asteroid_functions.proc_ratio =    {0.1, 0.1 ,0.1 ,0, 6}
 
 asteroid_functions.nauvis_chunks      = 0.0125

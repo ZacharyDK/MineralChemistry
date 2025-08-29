@@ -104,3 +104,22 @@ if (settings.startup["override-steel-plate"].value) then
   }
 
 end
+
+if (settings.startup["add-terra-asteroids-to-main-planets"].value) then
+  data.raw.planet["vulcanus"].asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_vulcanus, 0.9)
+  data.raw.planet["gleba"].asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_gleba, 0.9)
+  data.raw.planet["fulgora"].asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_fulgora, 0.9)
+  data.raw.planet["nauvis"].asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_fulgora, 0.1)
+  data.raw.planet["aquilo"].asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.fulgora_aquilo, 0.9)
+
+
+  data.raw["space-connection"]["nauvis-vulcanus"].asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_vulcanus)
+  data.raw["space-connection"]["nauvis-gleba"].asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_gleba)
+  data.raw["space-connection"]["nauvis-fulgora"].asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_fulgora)
+  data.raw["space-connection"]["vulcanus-gleba"].asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.vulcanus_gleba)
+  data.raw["space-connection"]["gleba-fulgora"].asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.gleba_fulgora)
+  data.raw["space-connection"]["gleba-aquilo"].asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.gleba_aquilo)
+  data.raw["space-connection"]["fulgora-aquilo"].asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.fulgora_aquilo)
+
+
+end

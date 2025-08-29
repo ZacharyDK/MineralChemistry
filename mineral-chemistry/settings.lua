@@ -36,5 +36,11 @@ data:extend({
         setting_type = "startup",
         default_value = false,
     },
+    {
+        type = "bool-setting",
+        name = "add-terra-asteroids-to-main-planets",
+        setting_type = "startup",
+        default_value = false,
+    },
 
 })
