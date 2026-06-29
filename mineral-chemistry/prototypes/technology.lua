@@ -362,7 +362,14 @@ data:extend({
             type = "unlock-recipe",
             recipe = "calcium-sulfate-production-alt",
           },
-
+          {
+            type = "unlock-recipe",
+            recipe = "calcium-sulfate-landfill",
+          },
+          {
+            type = "unlock-recipe",
+            recipe = "sulfur-dioxide-venting",
+          },
           
 
       },
@@ -450,7 +457,7 @@ data:extend({
 
 
       },
-      prerequisites = {"expert-mineral-processing"},
+      prerequisites = {"expert-mineral-processing","chemical-science-pack"},
       research_trigger = 
       {
         type = "build-entity",

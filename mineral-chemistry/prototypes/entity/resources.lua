@@ -18,7 +18,7 @@ local function resource(resource_parameters, autoplace_parameters, graphics_para
         mining_time = resource_parameters.mining_time,
         result = resource_parameters.name
         },
-        category = resource_parameters.category,
+        category=resource_parameters.category,
         subgroup = resource_parameters.subgroup,
         walking_sound = resource_parameters.walking_sound,
         collision_mask = resource_parameters.collision_mask,

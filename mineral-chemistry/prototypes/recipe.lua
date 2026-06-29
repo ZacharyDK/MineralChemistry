@@ -12,7 +12,7 @@ data:extend(
     type = "recipe",
     name = "froth-floatation-plant",
     main_product = "froth-floatation-plant",
-    category = "crafting",
+    categories={"crafting"},
     icons = 
     {
       {
@@ -24,6 +24,7 @@ data:extend(
 
     energy_required = 20,
     enabled = false,
+hide_from_signal_gui = false,
 
     ingredients =
     {
@@ -55,7 +56,7 @@ data:extend(
     type = "recipe",
     name = "blast-furnace",
     main_product = "blast-furnace",
-    category = "crafting",
+    categories={"crafting"},
     icons = 
     {
       {
@@ -67,6 +68,7 @@ data:extend(
 
     energy_required = 10,
     enabled = false,
+hide_from_signal_gui = false,
 
     ingredients =
     {
@@ -94,7 +96,7 @@ data:extend(
     type = "recipe",
     name = "dangerous-cryogenic-plant",
     main_product = "dangerous-cryogenic-plant",
-    category = "crafting",
+    categories={"crafting"},
     icons = 
     {
       {
@@ -106,6 +108,7 @@ data:extend(
 
     energy_required = 15,
     enabled = false,
+hide_from_signal_gui = false,
 
     ingredients =
     {
@@ -142,16 +145,17 @@ data:extend(
     name = "saponification-from-light-oil",
     energy_required = 30,
     enabled = false,
-    category = "chemistry",
+hide_from_signal_gui = false,
+    categories={"chemistry"},
     ingredients =
     {
       {type = "fluid", name = "sulfuric-acid-dilute", amount = 700},
-      {type = "fluid", name = "light-oil", amount = 750}
+      {type = "fluid", name = "light-oil", amount = 375}
     },
     results = 
     {
-      {type="fluid", name="glycerol", amount=150},
-      {type="fluid", name="fatty-acids", amount=450},
+      {type="fluid", name="glycerol", amount=166},
+      {type="fluid", name="fatty-acids", amount=500},
     },
     crafting_machine_tint =
     {
@@ -184,16 +188,17 @@ data:extend(
 
     energy_required = 12,
     enabled = false,
-    category = "chemistry",
+hide_from_signal_gui = false,
+    categories={"chemistry"},
     ingredients =
     {
       {type = "item", name = "iron-plate", amount = 1},
       {type = "fluid", name = "sulfuric-acid-dilute", amount = 100},
-      {type = "fluid", name = "glycerol", amount = 300},
+      {type = "fluid", name = "glycerol", amount = 200},
     },
     results = 
     {
-      {type="item", name="plastic-bar", amount=6},
+      {type="item", name="plastic-bar", amount=5},
     },
     crafting_machine_tint =
     {
@@ -226,15 +231,16 @@ data:extend(
 
     energy_required = 4,
     enabled = false,
-    category = "chemistry",
+hide_from_signal_gui = false,
+    categories={"chemistry"},
     ingredients =
     {
-      {type = "fluid", name = "fatty-acids", amount = 90},
-      {type = "fluid", name = "glycerol", amount = 30},
+      {type = "fluid", name = "fatty-acids", amount = 130},
+      {type = "fluid", name = "glycerol", amount = 50},
     },
     results = 
     {
-      {type="item", name="solid-fuel", amount=2},
+      {type="item", name="solid-fuel", amount=1},
     },
     crafting_machine_tint =
     {
@@ -269,7 +275,8 @@ data:extend(
 
     energy_required = 25,
     enabled = false,
-    category = "chemistry",
+hide_from_signal_gui = false,
+    categories={"chemistry"},
     ingredients =
     {
       {type = "fluid", name = "glycerol", amount = 45},
@@ -309,7 +316,8 @@ data:extend(
 
     energy_required = 25,
     enabled = false,
-    category = "chemistry",
+hide_from_signal_gui = false,
+    categories={"chemistry"},
     ingredients =
     {
       {type = "fluid", name = "fatty-acids", amount = 22},
@@ -349,7 +357,8 @@ data:extend(
 
     energy_required = 15,
     enabled = false,
-    category = "chemistry",
+hide_from_signal_gui = false,
+    categories={"chemistry"},
     ingredients =
     {
       {type = "item", name = "solid-fuel", amount = 2},
@@ -389,7 +398,8 @@ data:extend(
 
     energy_required = 22,
     enabled = false,
-    category = "chemistry",
+hide_from_signal_gui = false,
+    categories={"chemistry"},
     ingredients =
     {
       {type = "item", name = "wood", amount = 5},
@@ -428,7 +438,8 @@ data:extend(
 
     energy_required = 25,
     enabled = false,
-    category = "chemistry",
+hide_from_signal_gui = false,
+    categories={"chemistry"},
     ingredients =
     {
       {type = "fluid", name = "petroleum-gas", amount = 50},
@@ -465,7 +476,8 @@ data:extend(
 
     energy_required = 7,
     enabled = false,
-    category = "chemistry",
+hide_from_signal_gui = false,
+    categories={"chemistry"},
     ingredients =
     {
       {type = "item", name = "solid-fuel", amount = 1},
@@ -503,7 +515,8 @@ data:extend(
 
     energy_required = 20,
     enabled = false,
-    category = "blasting",
+hide_from_signal_gui = false,
+    categories={"blasting"},
     ingredients =
     {
       {type = "item", name = "tenorite", amount = 4},
@@ -511,7 +524,7 @@ data:extend(
     results = 
     {
       {type="item", name="copper-ore", amount = 3},
-      {type = "item", name = "slag", amount = 1,probability = 0.1},
+      {type = "item", name = "slag", amount = 1,independent_probability = 0.1},
     },
     crafting_machine_tint =
     {
@@ -538,7 +551,8 @@ data:extend(
 
     energy_required = 20,
     enabled = false,
-    category = "blasting",
+hide_from_signal_gui = false,
+    categories={"blasting"},
     ingredients =
     {
       {type = "item", name = "hematite", amount = 4},
@@ -546,7 +560,7 @@ data:extend(
     results = 
     {
       {type="item", name="iron-ore", amount = 3},
-      {type = "item", name = "slag", amount = 1,probability = 0.17},
+      {type = "item", name = "slag", amount = 1,independent_probability = 0.17},
     },
     crafting_machine_tint =
     {
@@ -574,7 +588,8 @@ data:extend(
 
     energy_required = 15,
     enabled = false,
-    category = "smelting",
+hide_from_signal_gui = false,
+    categories={"smelting"},
     ingredients =
     {
       {type = "item", name = "malachite", amount = 4},
@@ -582,7 +597,7 @@ data:extend(
     results = 
     {
       {type="item", name="tenorite", amount = 3, ignored_by_productivity = 2},
-      {type = "item", name = "slag", amount = 1,probability = 0.1},
+      {type = "item", name = "slag", amount = 1,independent_probability = 0.1},
     },
     crafting_machine_tint =
     {
@@ -609,7 +624,8 @@ data:extend(
 
     energy_required = 20,
     enabled = false,
-    category = "smelting",
+hide_from_signal_gui = false,
+    categories={"smelting"},
     ingredients =
     {
       {type = "item", name = "siderite", amount = 4},
@@ -617,7 +633,7 @@ data:extend(
     results = 
     {
       {type="item", name="hematite", amount = 3, ignored_by_productivity = 2},
-      {type = "item", name = "slag", amount = 1,probability = 0.17},
+      {type = "item", name = "slag", amount = 1,independent_probability = 0.17},
     },
     crafting_machine_tint =
     {
@@ -645,7 +661,8 @@ data:extend(
 
     energy_required = 15,
     enabled = false,
-    category = "smelting",
+hide_from_signal_gui = false,
+    categories={"smelting"},
     ingredients =
     {
       {type = "item", name = "covellite", amount = 4},
@@ -653,7 +670,7 @@ data:extend(
     results = 
     {
       {type="item", name="tenorite", amount = 3, ignored_by_productivity = 2},
-      {type = "item", name = "slag", amount = 1,probability = 0.17},
+      {type = "item", name = "slag", amount = 1,independent_probability = 0.17},
     },
     crafting_machine_tint =
     {
@@ -680,7 +697,8 @@ data:extend(
 
     energy_required = 20,
     enabled = false,
-    category = "smelting",
+hide_from_signal_gui = false,
+    categories={"smelting"},
     ingredients =
     {
       {type = "item", name = "pyrite", amount = 4},
@@ -688,7 +706,7 @@ data:extend(
     results = 
     {
       {type="item", name="hematite", amount = 3, ignored_by_productivity = 2},
-      {type = "item", name = "slag", amount = 1,probability = 0.17},
+      {type = "item", name = "slag", amount = 1,independent_probability = 0.17},
     },
     crafting_machine_tint =
     {
@@ -717,7 +735,8 @@ data:extend(
 
     energy_required = 15,
     enabled = false,
-    category = "chemistry",
+hide_from_signal_gui = false,
+    categories={"chemistry"},
     ingredients =
     {
       {type = "item", name = "covellite", amount = 4},
@@ -725,7 +744,7 @@ data:extend(
     results = 
     {
       {type="item", name="tenorite", amount = 3, ignored_by_productivity = 2},
-      {type = "item", name = "slag", amount = 1,probability = 0.17},
+      {type = "item", name = "slag", amount = 1,independent_probability = 0.17},
       {type = "fluid", name = "sulfur-dioxide", amount = 125, ignored_by_productivity = 80},
     },
     crafting_machine_tint =
@@ -753,7 +772,8 @@ data:extend(
 
     energy_required = 20,
     enabled = false,
-    category = "chemistry",
+hide_from_signal_gui = false,
+    categories={"chemistry"},
     ingredients =
     {
       {type = "item", name = "pyrite", amount = 4},
@@ -761,7 +781,7 @@ data:extend(
     results = 
     {
       {type="item", name="hematite", amount = 3, ignored_by_productivity = 2},
-      {type = "item", name = "slag", amount = 1,probability = 0.17},
+      {type = "item", name = "slag", amount = 1,independent_probability = 0.17},
       {type = "fluid", name = "sulfur-dioxide", amount = 125, ignored_by_productivity = 80},
     },
     crafting_machine_tint =
@@ -782,7 +802,7 @@ data:extend(
   {
     type ="recipe",
     name ="copper-oxide-to-sulfate",
-    category ="chemistry",
+    categories={"chemistry"},
     energy_required = 9,
     icons = 
     {
@@ -798,6 +818,7 @@ data:extend(
     },
 
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -809,7 +830,7 @@ data:extend(
     results =
     {
       {type ="fluid", name ="copper-sulfate-solution", amount = 300, ignored_by_productivity = 230},
-      {type = "item", name = "slag", amount = 1,probability = 0.07},
+      {type = "item", name = "slag", amount = 1,independent_probability = 0.07},
     },
     allow_quality =false,
     maximum_productivity = 2,
@@ -826,7 +847,7 @@ data:extend(
   {
     type ="recipe",
     name ="iron-oxide-to-sulfate",
-    category ="chemistry",
+    categories={"chemistry"},
     energy_required = 9,
     icons = 
     {
@@ -842,6 +863,7 @@ data:extend(
     },
 
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -853,7 +875,7 @@ data:extend(
     results =
     {
       {type ="fluid", name ="iron-sulfate-solution", amount = 300, ignored_by_productivity = 230},
-      {type = "item", name = "slag", amount = 1,probability = 0.07},
+      {type = "item", name = "slag", amount = 1,independent_probability = 0.07},
     },
     allow_quality =false,
     maximum_productivity = 2,
@@ -872,7 +894,7 @@ data:extend(
   {
     type ="recipe",
     name ="copper-carbonate-to-sulfate",
-    category ="chemistry",
+    categories={"chemistry"},
     energy_required = 5,
     icons = 
     {
@@ -888,6 +910,7 @@ data:extend(
     },
 
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -899,7 +922,7 @@ data:extend(
     results =
     {
       {type ="fluid", name ="copper-sulfate-solution", amount = 300, ignored_by_productivity = 230},
-      {type = "item", name = "slag", amount = 1,probability = 0.07},
+      {type = "item", name = "slag", amount = 1,independent_probability = 0.07},
     },
     allow_quality =false,
     maximum_productivity = 2,
@@ -916,7 +939,7 @@ data:extend(
   {
     type ="recipe",
     name ="iron-carbonate-to-sulfate",
-    category ="chemistry",
+    categories={"chemistry"},
     energy_required = 5,
     icons = 
     {
@@ -932,6 +955,7 @@ data:extend(
     },
 
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -943,7 +967,7 @@ data:extend(
     results =
     {
       {type ="fluid", name ="iron-sulfate-solution", amount = 300, ignored_by_productivity = 230},
-      {type = "item", name = "slag", amount = 1,probability = 0.07},
+      {type = "item", name = "slag", amount = 1,independent_probability = 0.07},
     },
     allow_quality =false,
     maximum_productivity = 2,
@@ -962,7 +986,7 @@ data:extend(
   {
     type ="recipe",
     name ="copper-sulfide-to-sulfate",
-    category ="chemistry",
+    categories={"chemistry"},
     energy_required = 15,
     icons = 
     {
@@ -978,6 +1002,7 @@ data:extend(
     },
 
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -989,7 +1014,7 @@ data:extend(
     results =
     {
       {type ="fluid", name ="copper-sulfate-solution", amount = 300, ignored_by_productivity = 230},
-      {type = "item", name = "slag", amount = 1,probability = 0.07},
+      {type = "item", name = "slag", amount = 1,independent_probability = 0.07},
     },
     allow_quality =false,
     maximum_productivity = 2,
@@ -1006,7 +1031,7 @@ data:extend(
   {
     type ="recipe",
     name ="iron-sulfide-to-sulfate",
-    category ="chemistry",
+    categories={"chemistry"},
     energy_required = 15,
     icons = 
     {
@@ -1022,6 +1047,7 @@ data:extend(
     },
 
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -1033,7 +1059,7 @@ data:extend(
     results =
     {
       {type ="fluid", name ="iron-sulfate-solution", amount = 300, ignored_by_productivity = 230},
-      {type = "item", name = "slag", amount = 1,probability = 0.07},
+      {type = "item", name = "slag", amount = 1,independent_probability = 0.07},
     },
     allow_quality =false,
     maximum_productivity = 2,
@@ -1054,22 +1080,23 @@ data:extend(
   {
     type ="recipe",
     name ="slag-recycling",
-    category = "recycling-or-hand-crafting",
+    categories={"recycling","crafting"},
     energy_required = 3,
     subgroup = "fulgora-processes", --TODO add my own subprocess.
     order = "zzz[trash]-z[slag-recycling]",
     enabled = false,
+hide_from_signal_gui = false,
     icons = 
     {
       {
-        icon = "__quality__/graphics/icons/recycling.png"
+        icon = "__recycler__/graphics/icons/recycling.png"
       },
       {
         icon = "__mineral-chemistry__/graphics/icons/ores_malcom/slag/slag-1.png",
         scale = 0.4
       },
       {
-        icon = "__quality__/graphics/icons/recycling-top.png"
+        icon = "__recycler__/graphics/icons/recycling-top.png"
       }
     },
     ingredients =
@@ -1081,7 +1108,7 @@ data:extend(
 
     results =
     {
-      {type = "item", name = "slag", amount = 1,probability = 0.88},
+      {type = "item", name = "slag", amount = 1,independent_probability = 0.88},
     },
     allow_quality = false,
     allow_productivity = false,
@@ -1092,7 +1119,7 @@ data:extend(
   {
     type ="recipe",
     name ="hydrofluoric-acid",
-    category ="fluorination",
+    categories={"fluorination"},
     energy_required = 6,
     icons = 
     {
@@ -1103,6 +1130,7 @@ data:extend(
     },
 
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -1131,7 +1159,7 @@ data:extend(
   {
     type ="recipe",
     name ="calcium-sulfate-destruction",
-    category ="chemistry",
+    categories={"chemistry"},
     energy_required = 6,
     icons = 
     {
@@ -1146,6 +1174,7 @@ data:extend(
     },
 
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -1173,7 +1202,7 @@ data:extend(
   {
     type ="recipe",
     name ="slag-destruction",
-    category ="fluorination",
+    categories={"fluorination"},
     subgroup = "fluid",
     energy_required = 8,
     icons = 
@@ -1188,6 +1217,7 @@ data:extend(
     },
 
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -1213,7 +1243,7 @@ data:extend(
   {
     type ="recipe",
     name ="fluorine-gas-from-acid",
-    category ="fluorination",
+    categories={"fluorination"},
     energy_required = 20,
     icons = 
     {
@@ -1224,6 +1254,7 @@ data:extend(
     },
 
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
       {type ="fluid", name ="hydrofluoric-acid", amount = 100},
@@ -1233,7 +1264,7 @@ data:extend(
     results =
     {
       {type ="fluid", name ="fluorine", amount = 50, ignored_by_productivity = 20},
-      {type = "item", name = "fluorine-explosion", amount = 1, probability = 0.03},
+      {type = "item", name = "fluorine-explosion", amount = 1, independent_probability = 0.03},
     },
     allow_quality =false,
     maximum_productivity = 2,
@@ -1250,7 +1281,7 @@ data:extend(
   {
     type ="recipe",
     name ="fluorine-gas-from-acid-danger",
-    category ="fluorination",
+    categories={"fluorination"},
     energy_required = 10,
     icons = 
     {
@@ -1266,6 +1297,7 @@ data:extend(
     },
 
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
       {type ="fluid", name ="hydrofluoric-acid", amount = 200},
@@ -1275,7 +1307,7 @@ data:extend(
     results =
     {
       {type ="fluid", name ="fluorine", amount = 100, ignored_by_productivity = 20},
-      {type = "item", name = "fluorine-explosion", amount = 1, probability = 0.12},
+      {type = "item", name = "fluorine-explosion", amount = 1, independent_probability = 0.12},
     },
     allow_quality =false,
     maximum_productivity = 2,
@@ -1292,7 +1324,7 @@ data:extend(
   {
     type ="recipe",
     name ="fluoro-slag-destruction",
-    category ="fluorination",
+    categories={"fluorination"},
     subgroup = "fluid",
     energy_required = 12,
     icons = 
@@ -1307,6 +1339,7 @@ data:extend(
     },
 
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -1333,7 +1366,7 @@ data:extend(
   {
     type ="recipe",
     name ="dangerous-fluoro-slag-destruction",
-    category ="fluorination",
+    categories={"fluorination"},
     subgroup = "fluid",
     energy_required = 8,
     icons = 
@@ -1353,6 +1386,7 @@ data:extend(
     },
 
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -1364,7 +1398,7 @@ data:extend(
 
     results =
     {
-      {type = "item", name = "fluorine-explosion", amount = 1, probability = 0.15},
+      {type = "item", name = "fluorine-explosion", amount = 1, independent_probability = 0.15},
     },
     allow_quality =false,
     allow_productivity = false,
@@ -1380,7 +1414,7 @@ data:extend(
   {
     type ="recipe",
     name ="fluoro-detonation",
-    category ="fluorination",
+    categories={"fluorination"},
     energy_required = 2,
     icons = 
     {
@@ -1391,6 +1425,7 @@ data:extend(
     },
 
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -1430,7 +1465,8 @@ data:extend(
 
     energy_required = 20,
     enabled = false,
-    category = "froth-floatation",
+hide_from_signal_gui = false,
+    categories={"froth-floatation"},
     ingredients =
     {
       {type = "item", name = "covellite_rough", amount = 14},
@@ -1443,7 +1479,7 @@ data:extend(
       {type="fluid", name="covellite-froth", amount = 200},
       {type = "fluid", name = "water", amount = 1500,ignored_by_productivity = 9999},
       {type = "item", name = "slag", amount = 10},
-      {type = "item", name = "slag", amount = 4, probability = 0.2},
+      {type = "item", name = "slag", amount = 4, independent_probability = 0.2},
     },
     crafting_machine_tint =
     {
@@ -1470,7 +1506,8 @@ data:extend(
 
     energy_required = 20,
     enabled = false,
-    category = "froth-floatation",
+hide_from_signal_gui = false,
+    categories={"froth-floatation"},
     ingredients =
     {
       {type = "item", name = "pyrite_rough", amount = 14},
@@ -1483,7 +1520,7 @@ data:extend(
       {type="fluid", name="pyrite-froth", amount = 200},
       {type = "fluid", name = "water", amount = 1500,ignored_by_productivity = 9999},
       {type = "item", name = "slag", amount = 10},
-      {type = "item", name = "slag", amount = 4, probability = 0.2},
+      {type = "item", name = "slag", amount = 4, independent_probability = 0.2},
     },
     crafting_machine_tint =
     {
@@ -1510,7 +1547,8 @@ data:extend(
 
     energy_required = 20,
     enabled = false,
-    category = "froth-floatation",
+hide_from_signal_gui = false,
+    categories={"froth-floatation"},
     ingredients =
     {
       {type = "item", name = "tenorite_rough", amount = 14},
@@ -1523,7 +1561,7 @@ data:extend(
       {type="fluid", name="tenorite-froth", amount = 200},
       {type = "fluid", name = "water", amount = 1500,ignored_by_productivity = 9999},
       {type = "item", name = "slag", amount = 10},
-      {type = "item", name = "slag", amount = 4, probability = 0.2},
+      {type = "item", name = "slag", amount = 4, independent_probability = 0.2},
     },
     crafting_machine_tint =
     {
@@ -1550,7 +1588,8 @@ data:extend(
 
     energy_required = 20,
     enabled = false,
-    category = "froth-floatation",
+hide_from_signal_gui = false,
+    categories={"froth-floatation"},
     ingredients =
     {
       {type = "item", name = "malachite_rough", amount = 14},
@@ -1563,7 +1602,7 @@ data:extend(
       {type="fluid", name="malachite-froth", amount = 200},
       {type = "fluid", name = "water", amount = 1500,ignored_by_productivity = 9999},
       {type = "item", name = "slag", amount = 10},
-      {type = "item", name = "slag", amount = 4, probability = 0.2},
+      {type = "item", name = "slag", amount = 4, independent_probability = 0.2},
     },
     crafting_machine_tint =
     {
@@ -1590,7 +1629,8 @@ data:extend(
 
     energy_required = 20,
     enabled = false,
-    category = "froth-floatation",
+hide_from_signal_gui = false,
+    categories={"froth-floatation"},
     ingredients =
     {
       {type = "item", name = "siderite_rough", amount = 14},
@@ -1603,7 +1643,7 @@ data:extend(
       {type="fluid", name="siderite-froth", amount = 200},
       {type = "fluid", name = "water", amount = 1500,ignored_by_productivity = 9999},
       {type = "item", name = "slag", amount = 10},
-      {type = "item", name = "slag", amount = 4, probability = 0.2},
+      {type = "item", name = "slag", amount = 4, independent_probability = 0.2},
     },
     crafting_machine_tint =
     {
@@ -1630,7 +1670,8 @@ data:extend(
 
     energy_required = 20,
     enabled = false,
-    category = "froth-floatation",
+hide_from_signal_gui = false,
+    categories={"froth-floatation"},
     ingredients =
     {
       {type = "item", name = "hematite_rough", amount = 14},
@@ -1643,7 +1684,7 @@ data:extend(
       {type="fluid", name="hematite-froth", amount = 200,ignored_by_productivity = 9999},
       {type = "fluid", name = "water", amount = 1500},
       {type = "item", name = "slag", amount = 10},
-      {type = "item", name = "slag", amount = 4, probability = 0.2},
+      {type = "item", name = "slag", amount = 4, independent_probability = 0.2},
     },
     crafting_machine_tint =
     {
@@ -1672,7 +1713,8 @@ data:extend(
 
     energy_required = 3,
     enabled = false,
-    category = "chemistry",
+hide_from_signal_gui = false,
+    categories={"chemistry"},
     ingredients =
     {
       {type="fluid", name="covellite-froth", amount = 200},
@@ -1707,7 +1749,8 @@ data:extend(
 
     energy_required = 3,
     enabled = false,
-    category = "chemistry",
+hide_from_signal_gui = false,
+    categories={"chemistry"},
     ingredients =
     {
       {type="fluid", name="pyrite-froth", amount = 200},
@@ -1742,7 +1785,8 @@ data:extend(
 
     energy_required = 3,
     enabled = false,
-    category = "chemistry",
+hide_from_signal_gui = false,
+    categories={"chemistry"},
     ingredients =
     {
       {type="fluid", name="tenorite-froth", amount = 200},
@@ -1777,7 +1821,8 @@ data:extend(
 
     energy_required = 3,
     enabled = false,
-    category = "chemistry",
+hide_from_signal_gui = false,
+    categories={"chemistry"},
     ingredients =
     {
       {type="fluid", name="malachite-froth", amount = 200},
@@ -1812,7 +1857,8 @@ data:extend(
 
     energy_required = 3,
     enabled = false,
-    category = "chemistry",
+hide_from_signal_gui = false,
+    categories={"chemistry"},
     ingredients =
     {
       {type="fluid", name="siderite-froth", amount = 200},
@@ -1847,7 +1893,8 @@ data:extend(
 
     energy_required = 3,
     enabled = false,
-    category = "chemistry",
+hide_from_signal_gui = false,
+    categories={"chemistry"},
     ingredients =
     {
       {type="fluid", name="hematite-froth", amount = 200},
@@ -1877,7 +1924,7 @@ data:extend(
   {
     type ="recipe",
     name ="copper-oxide_rough_to_sulfate",
-    category ="chemistry",
+    categories={"chemistry"},
     energy_required = 18,
     icons = 
     {
@@ -1893,6 +1940,7 @@ data:extend(
     },
 
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -1921,7 +1969,7 @@ data:extend(
   {
     type ="recipe",
     name ="iron-oxide_rough_to_sulfate",
-    category ="chemistry",
+    categories={"chemistry"},
     energy_required = 18,
     icons = 
     {
@@ -1937,6 +1985,7 @@ data:extend(
     },
 
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -1967,7 +2016,7 @@ data:extend(
   {
     type ="recipe",
     name ="copper-carbonate_rough_to_sulfate",
-    category ="chemistry",
+    categories={"chemistry"},
     energy_required = 10,
     icons = 
     {
@@ -1983,6 +2032,7 @@ data:extend(
     },
 
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -2011,7 +2061,7 @@ data:extend(
   {
     type ="recipe",
     name ="iron-carbonate_rough_to_sulfate",
-    category ="chemistry",
+    categories={"chemistry"},
     energy_required = 10,
     icons = 
     {
@@ -2027,6 +2077,7 @@ data:extend(
     },
 
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -2057,7 +2108,7 @@ data:extend(
   {
     type ="recipe",
     name ="copper-sulfide_rough_to_sulfate",
-    category ="chemistry",
+    categories={"chemistry"},
     energy_required = 30,
     icons = 
     {
@@ -2073,6 +2124,7 @@ data:extend(
     },
 
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -2101,7 +2153,7 @@ data:extend(
   {
     type ="recipe",
     name ="iron-sulfide_rough_to_sulfate",
-    category ="chemistry",
+    categories={"chemistry"},
     energy_required = 30,
     icons = 
     {
@@ -2117,6 +2169,7 @@ data:extend(
     },
 
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -2165,8 +2218,9 @@ data:extend(
     },
 
     energy_required = 10,
-    category = "hydraulic-washing",
+    categories={"hydraulic-washing"},
     enabled = false,
+hide_from_signal_gui = false,
 
     emissions_multiplier = 8,
     ingredients =
@@ -2177,10 +2231,10 @@ data:extend(
     results = 
     {
       {type = "item", name = "covellite", amount = 4},
-      {type = "item", name = "slag", amount = 15, probability = 0.3, ignored_by_productivity = 7},
-      {type = "item", name = "slag", amount = 7, probability = 0.2, ignored_by_productivity = 6},
-      {type = "item", name = "slag", amount = 17, probability = 0.2, ignored_by_productivity = 8},
-      {type = "item", name = "slag", amount = 5, probability = 0.4, ignored_by_productivity = 3},
+      {type = "item", name = "slag", amount = 15, independent_probability = 0.3, ignored_by_productivity = 7},
+      {type = "item", name = "slag", amount = 7, independent_probability = 0.2, ignored_by_productivity = 6},
+      {type = "item", name = "slag", amount = 17, independent_probability = 0.2, ignored_by_productivity = 8},
+      {type = "item", name = "slag", amount = 5, independent_probability = 0.4, ignored_by_productivity = 3},
 
     },
     crafting_machine_tint =
@@ -2212,8 +2266,9 @@ data:extend(
     },
 
     energy_required = 10,
-    category = "hydraulic-washing",
+    categories={"hydraulic-washing"},
     enabled = false,
+hide_from_signal_gui = false,
 
     emissions_multiplier = 8,
     ingredients =
@@ -2224,10 +2279,10 @@ data:extend(
     results = 
     {
       {type = "item", name = "hematite", amount = 4},
-      {type = "item", name = "slag", amount = 15, probability = 0.3, ignored_by_productivity = 7},
-      {type = "item", name = "slag", amount = 7, probability = 0.2, ignored_by_productivity = 6},
-      {type = "item", name = "slag", amount = 17, probability = 0.2, ignored_by_productivity = 8},
-      {type = "item", name = "slag", amount = 5, probability = 0.4, ignored_by_productivity = 3},
+      {type = "item", name = "slag", amount = 15, independent_probability = 0.3, ignored_by_productivity = 7},
+      {type = "item", name = "slag", amount = 7, independent_probability = 0.2, ignored_by_productivity = 6},
+      {type = "item", name = "slag", amount = 17, independent_probability = 0.2, ignored_by_productivity = 8},
+      {type = "item", name = "slag", amount = 5, independent_probability = 0.4, ignored_by_productivity = 3},
 
     },
     crafting_machine_tint =
@@ -2259,8 +2314,9 @@ data:extend(
     },
 
     energy_required = 10,
-    category = "hydraulic-washing",
+    categories={"hydraulic-washing"},
     enabled = false,
+hide_from_signal_gui = false,
 
     emissions_multiplier = 8,
     ingredients =
@@ -2271,10 +2327,10 @@ data:extend(
     results = 
     {
       {type = "item", name = "malachite", amount = 4},
-      {type = "item", name = "slag", amount = 15, probability = 0.3, ignored_by_productivity = 7},
-      {type = "item", name = "slag", amount = 7, probability = 0.2, ignored_by_productivity = 6},
-      {type = "item", name = "slag", amount = 17, probability = 0.2, ignored_by_productivity = 8},
-      {type = "item", name = "slag", amount = 5, probability = 0.4, ignored_by_productivity = 3},
+      {type = "item", name = "slag", amount = 15, independent_probability = 0.3, ignored_by_productivity = 7},
+      {type = "item", name = "slag", amount = 7, independent_probability = 0.2, ignored_by_productivity = 6},
+      {type = "item", name = "slag", amount = 17, independent_probability = 0.2, ignored_by_productivity = 8},
+      {type = "item", name = "slag", amount = 5, independent_probability = 0.4, ignored_by_productivity = 3},
 
     },
     crafting_machine_tint =
@@ -2306,8 +2362,9 @@ data:extend(
     },
 
     energy_required = 10,
-    category = "hydraulic-washing",
+    categories={"hydraulic-washing"},
     enabled = false,
+hide_from_signal_gui = false,
 
     emissions_multiplier = 8,
     ingredients =
@@ -2318,10 +2375,10 @@ data:extend(
     results = 
     {
       {type = "item", name = "pyrite", amount = 4},
-      {type = "item", name = "slag", amount = 15, probability = 0.3, ignored_by_productivity = 7},
-      {type = "item", name = "slag", amount = 7, probability = 0.2, ignored_by_productivity = 6},
-      {type = "item", name = "slag", amount = 17, probability = 0.2, ignored_by_productivity = 8},
-      {type = "item", name = "slag", amount = 5, probability = 0.4, ignored_by_productivity = 3},
+      {type = "item", name = "slag", amount = 15, independent_probability = 0.3, ignored_by_productivity = 7},
+      {type = "item", name = "slag", amount = 7, independent_probability = 0.2, ignored_by_productivity = 6},
+      {type = "item", name = "slag", amount = 17, independent_probability = 0.2, ignored_by_productivity = 8},
+      {type = "item", name = "slag", amount = 5, independent_probability = 0.4, ignored_by_productivity = 3},
 
     },
     crafting_machine_tint =
@@ -2353,8 +2410,9 @@ data:extend(
     },
 
     energy_required = 10,
-    category = "hydraulic-washing",
+    categories={"hydraulic-washing"},
     enabled = false,
+hide_from_signal_gui = false,
 
     emissions_multiplier = 8,
     ingredients =
@@ -2365,10 +2423,10 @@ data:extend(
     results = 
     {
       {type = "item", name = "siderite", amount = 4},
-      {type = "item", name = "slag", amount = 15, probability = 0.3, ignored_by_productivity = 7},
-      {type = "item", name = "slag", amount = 7, probability = 0.2, ignored_by_productivity = 6},
-      {type = "item", name = "slag", amount = 17, probability = 0.2, ignored_by_productivity = 8},
-      {type = "item", name = "slag", amount = 5, probability = 0.4, ignored_by_productivity = 3},
+      {type = "item", name = "slag", amount = 15, independent_probability = 0.3, ignored_by_productivity = 7},
+      {type = "item", name = "slag", amount = 7, independent_probability = 0.2, ignored_by_productivity = 6},
+      {type = "item", name = "slag", amount = 17, independent_probability = 0.2, ignored_by_productivity = 8},
+      {type = "item", name = "slag", amount = 5, independent_probability = 0.4, ignored_by_productivity = 3},
 
     },
     crafting_machine_tint =
@@ -2400,8 +2458,9 @@ data:extend(
     },
 
     energy_required = 10,
-    category = "hydraulic-washing",
+    categories={"hydraulic-washing"},
     enabled = false,
+hide_from_signal_gui = false,
 
     emissions_multiplier = 8,
     ingredients =
@@ -2412,10 +2471,10 @@ data:extend(
     results = 
     {
       {type = "item", name = "tenorite", amount = 4},
-      {type = "item", name = "slag", amount = 15, probability = 0.3, ignored_by_productivity = 7},
-      {type = "item", name = "slag", amount = 7, probability = 0.2, ignored_by_productivity = 6},
-      {type = "item", name = "slag", amount = 17, probability = 0.2, ignored_by_productivity = 8},
-      {type = "item", name = "slag", amount = 5, probability = 0.4, ignored_by_productivity = 3},
+      {type = "item", name = "slag", amount = 15, independent_probability = 0.3, ignored_by_productivity = 7},
+      {type = "item", name = "slag", amount = 7, independent_probability = 0.2, ignored_by_productivity = 6},
+      {type = "item", name = "slag", amount = 17, independent_probability = 0.2, ignored_by_productivity = 8},
+      {type = "item", name = "slag", amount = 5, independent_probability = 0.4, ignored_by_productivity = 3},
 
     },
     crafting_machine_tint =
@@ -2442,7 +2501,7 @@ data:extend(
         scale = 0.9,
       }
     },
-    category = "fluorination",
+    categories={"fluorination"},
     subgroup = "aquilo-processes",
     --order = "z[fluoroketone]-e[fluoroketone]",
     auto_recycle = false,
@@ -2456,10 +2515,11 @@ data:extend(
     results = 
     {
       {type = "fluid", name = "fluoroketone-hot", amount = 40, temperature = 180},
-      {type = "item", name = "fluorine-explosion", amount = 1, probability = 0.12, ignored_by_productivity = 9999},
+      {type = "item", name = "fluorine-explosion", amount = 1, independent_probability = 0.12, ignored_by_productivity = 9999},
     },
     allow_productivity = true,
     enabled = false,
+hide_from_signal_gui = false,
     crafting_machine_tint =
     {
       primary = {r = 0.365, g = 0.815, b = 0.334, a = 1.000}, -- #5dcf55ff
@@ -2475,11 +2535,12 @@ data:extend(
     type = "recipe",
     name = "terra-asteroid-crushing",
     icon = "__mineral-chemistry__/graphics/icons/terra-asteroid-crushing.png",
-    category = "crushing",
+    categories={"crushing"},
     subgroup="space-crushing",
     order = "e-b-a",
     auto_recycle = false,
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
       {type = "item", name = "terra-asteroid-chunk", amount = 1},
@@ -2488,7 +2549,7 @@ data:extend(
     results =
     {
       {type = "item", name = "stone", amount = 10},
-      {type = "item", name = "terra-asteroid-chunk", amount = 1, probability = 0.3}
+      {type = "item", name = "terra-asteroid-chunk", amount = 1, independent_probability = 0.3}
     },
     allow_productivity = true,
     allow_decomposition = false,
@@ -2498,11 +2559,12 @@ data:extend(
     type = "recipe",
     name = "terra-asteroid-reprocessing",
     icon = "__mineral-chemistry__/graphics/icons/terra-asteroid-reprocessing.png",
-    category = "crushing",
+    categories={"crushing"},
     subgroup="space-crushing",
     order = "g-c-a",
     auto_recycle = false,
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
       {type = "item", name = "terra-asteroid-chunk", amount = 1},
@@ -2510,8 +2572,8 @@ data:extend(
     energy_required = 5,
     results =
     {
-      {type = "item", name = "terra-asteroid-chunk", amount = 1, probability = 0.98},
-      {type = "item", name = "carbonic-asteroid-chunk", amount = 1, probability = 0.02},
+      {type = "item", name = "terra-asteroid-chunk", amount = 1, independent_probability = 0.98},
+      {type = "item", name = "carbonic-asteroid-chunk", amount = 1, independent_probability = 0.02},
     },
     allow_productivity = false,
     allow_decomposition = false,
@@ -2523,13 +2585,15 @@ data:extend(
   {
     type ="recipe",
     name ="dilute-acid-neutralization",
-    category ="chemistry-or-cryogenics",
+    categories={"chemistry","cryogenics"},
     icon ="__base__/graphics/icons/fluid/water.png",
     enabled = false,
+hide_from_signal_gui = false,
     --subgroup = "sulfur",
     order ="d[other-chemistry]-b[pressurized-acid-neutralisation]",
     auto_recycle = false,
     enabled = false,
+hide_from_signal_gui = false,
     surface_conditions =
     {
       {
@@ -2565,14 +2629,16 @@ data:extend(
   {
     type ="recipe",
     name ="destructive-dilute-acid-neutralization",
-    category ="chemistry-or-cryogenics",
+    categories={"chemistry","cryogenics"},
     subgroup = "fluid",
     icon ="__mineral-chemistry__/graphics/icons/fluid/sulfuric-acid-dilute-X.png",
     enabled = false,
+hide_from_signal_gui = false,
     --subgroup = "sulfur",
     order ="d[other-chemistry]-b[pressurized-acid-neutralisation]",
     auto_recycle = false,
     enabled = false,
+hide_from_signal_gui = false,
     surface_conditions =
     {
       {
@@ -2609,13 +2675,15 @@ data:extend(
   {
     type ="recipe",
     name ="hot-water-to-steam",
-    category ="chemistry-or-cryogenics",
+    categories={"chemistry","cryogenics"},
     icon ="__base__/graphics/icons/fluid/water.png",
     enabled = false,
+hide_from_signal_gui = false,
     subgroup ="fluid-recipes",
     order ="d[other-chemistry]-c[pressurized-acid-neutralisation]",
     auto_recycle = false,
     enabled = false,
+hide_from_signal_gui = false,
     surface_conditions =
     {
       {
@@ -2652,9 +2720,10 @@ data:extend(
       name ="sulfur-combustion",
       --subgroup = "sulfur",
       order = "a",
-      category ="chemistry",
+      categories={"chemistry"},
       icon ="__mineral-chemistry__/graphics/icons/fluid/sulfur-dioxide.png",
       enabled = false,
+hide_from_signal_gui = false,
       surface_conditions =
       {
         {
@@ -2690,11 +2759,12 @@ data:extend(
   {
       type ="recipe",
       name ="sulfur-reduction",
-      category ="chemistry",
+      categories={"chemistry"},
       --subgroup = "sulfur",
       order = "b",
       icon ="__base__/graphics/icons/fluid/water.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -2726,9 +2796,10 @@ data:extend(
     name ="hydrogen-sulfide-combustion",
     --subgroup = "sulfur",
     order = "b",
-    category ="chemistry",
+    categories={"chemistry"},
     icon ="__base__/graphics/icons/fluid/water.png",
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -2771,9 +2842,10 @@ data:extend(
       name ="force-reduction-iron",
       --subgroup = "sulfur",
       order = "g",
-      category ="chemistry",
+      categories={"chemistry"},
       icon ="__base__/graphics/icons/iron-ore.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -2806,9 +2878,10 @@ data:extend(
       name ="force-reduction-copper",
       --subgroup = "sulfur",
       order = "g",
-      category ="chemistry",
+      categories={"chemistry"},
       icon ="__base__/graphics/icons/copper-ore.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -2839,11 +2912,12 @@ data:extend(
   {
     type ="recipe",
     name ="calcium-sulfate",
-    category ="organic-or-chemistry",
+    categories={"organic","chemistry"},
     --subgroup = "sulfur",
     order = "j",
     icon ="__mineral-chemistry__/graphics/icons/calcium-sulfate.png",
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -2875,9 +2949,10 @@ data:extend(
       name ="sulfuric-acid-dilution",
       --subgroup = "sulfur",
       order = "b",
-      category ="chemistry",
+      categories={"chemistry"},
       icon ="__mineral-chemistry__/graphics/icons/fluid/sulfuric-acid-dilute.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -2907,11 +2982,12 @@ data:extend(
   {
     type ="recipe",
     name ="sulfuric-acid-concentration-alt",
-    category ="chemistry",
+    categories={"chemistry"},
     --subgroup = "sulfur",
     order = "b",
     icon ="__base__/graphics/icons/fluid/sulfuric-acid.png",
     enabled = false,
+hide_from_signal_gui = false,
     ingredients =
     {
 
@@ -2940,11 +3016,12 @@ data:extend(
   {
       type ="recipe",
       name ="calcium-sulfate-production-alt",
-      category ="chemistry",
+      categories={"chemistry"},
       icon ="__mineral-chemistry__/graphics/icons/calcium-sulfate.png",
       --subgroup = "sulfur",
       order = "j",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -2970,17 +3047,91 @@ data:extend(
       },
       auto_recycle = false,
   },
+  --2.1
+
+  {
+    type = "recipe",
+    name = "calcium-sulfate-landfill",
+    main_product = "landfill",
+    categories={"crafting"},
 
 
+    energy_required = 30,
+    enabled = false,
+hide_from_signal_gui = false,
+
+    ingredients =
+    {
+      {type = "item", name = "calcium-sulfate", amount = 60},
+
+    },
+    results = 
+    {
+      {type="item", name="landfill", amount=1},
+
+    },
+    main_product = "landfill",
+    crafting_machine_tint =
+    {
+      primary = {r = 26, g = 26, b = 24, a = 1.000}, --rgb(26, 26, 24)
+      secondary = {r = 70, g = 71, b = 65, a = 1.000}, --rgb(70, 71, 65)
+      tertiary = {r = 85, g = 82, b = 78, a = 1.000}, --rgb(85, 82, 78)
+      quaternary = {r = 67, g = 65, b = 62, a = 1.000}, --rgb(67, 65, 62)
+    },
+    allow_productivity = false,
+    allow_quality = true, 
+    auto_recycle = false,
+  },
+
+  {
+    type = "recipe",
+    name = "sulfur-dioxide-venting",
+    icons = 
+    {
+      {
+        icon ="__mineral-chemistry__/graphics/icons/fluid/sulfur-dioxide.png",
+        scale = 0.9
+      },
+      {
+        icon = "__mineral-chemistry__/graphics/icons/slash.png",
+        scale = 0.9,
+      }
+    },
+
+    energy_required = 1,
+    enabled = false,
+    hide_from_signal_gui = false,
+    categories={"chemistry"},
+    ingredients =
+    {
+      {type = "fluid", name = "sulfur-dioxide", amount = 50},
+    },
+    results = 
+    {
+    },
+    crafting_machine_tint =
+    {
+      primary = {r = 198, g = 198, b = 152, a = 1.000}, --rgb(198, 198, 152)
+      secondary = {r = 202, g = 215, b = 140, a = 1.000}, --rgb(202, 215, 140)
+      tertiary = {r = 228, g = 197, b = 151, a = 1.000}, --rgb(228, 197, 151)
+      quaternary = {r = 255, g = 187, b = 73, a = 1.000}, --rgb(255, 187, 73)
+    },
+    allow_productivity = false,
+    allow_quality = false, 
+    auto_recycle = false,
+    allow_consumption = false,
+    emissions_multiplier = 4,
+  },
 
 
+  --Depreciated
   --Thurster and oxider barrel and unbarrel 
   --Note that you still have to make it in space.
   --[[
   {
     type = "recipe",
     name = "thruster-fluid-barrel-p",
-    category = "crafting-with-fluid",
+    category="crafting-with-fluid",
     icons = 
     {
       {
@@ -3002,6 +3153,7 @@ data:extend(
     allow_productivity = false,
     allow_quality = false,
     enabled = false,
+hide_from_signal_gui = false,
     crafting_machine_tint =
     {
       primary = {r = 175, g = 63, b = 40, a = 1.000}, --rgb(175, 63, 40) 
@@ -3013,7 +3165,7 @@ data:extend(
   {
     type = "recipe",
     name = "thruster-fluid-barrel-empty-p",
-    category = "crafting-with-fluid",
+    category="crafting-with-fluid",
     icons = 
     {
       {
@@ -3035,6 +3187,7 @@ data:extend(
     allow_productivity = false,
     allow_quality = false,
     enabled = false,
+hide_from_signal_gui = false,
     crafting_machine_tint =
     {
       primary = {r = 175, g = 63, b = 40, a = 1.000}, --rgb(175, 63, 40) 
@@ -3047,7 +3200,7 @@ data:extend(
   {
     type = "recipe",
     name = "oxidizer-fluid-barrel-p",
-    category = "crafting-with-fluid",
+    category="crafting-with-fluid",
     icons = 
     {
       {
@@ -3069,6 +3222,7 @@ data:extend(
     allow_productivity = false,
     allow_quality = false,
     enabled = false,
+hide_from_signal_gui = false,
     crafting_machine_tint =
     {
       primary = {r = 86, g = 161, b = 246, a = 1.000}, --rgb(86, 161, 246)
@@ -3080,7 +3234,7 @@ data:extend(
   {
     type = "recipe",
     name = "oxidizer-fluid-barrel-empty-p",
-    category = "crafting-with-fluid",
+    category="crafting-with-fluid",
     icons = 
     {
       {
@@ -3102,6 +3256,7 @@ data:extend(
     allow_productivity = false,
     allow_quality = false,
     enabled = false,
+hide_from_signal_gui = false,
     crafting_machine_tint =
     {
       primary = {r = 86, g = 161, b = 246, a = 1.000}, --rgb(86, 161, 246)

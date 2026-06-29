@@ -1,7 +1,7 @@
 require ("util")
 require ("__base__.prototypes.entity.pipecovers")
 require ("circuit-connector-sprites")
-require ("__base__.prototypes.entity.assemblerpipes")
+
 
 local simulations = require("__base__.prototypes.factoriopedia-simulations")
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
@@ -608,11 +608,11 @@ data:extend(
         module_slots = 4,
         icons_positioning =
         {
-          {inventory_index = defines.inventory.furnace_modules, shift = {0, 0.95}, max_icons_per_row = 4}
+          {inventory_index = defines.inventory.crafter_modules, shift = {0, 0.95}, max_icons_per_row = 4}
         },
         icon_draw_specification = {scale = 2, shift = {0, -0.3}},
         allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
-        crafting_categories = {"hydraulic-washing","fluorination","cryogenics","chemistry-or-cryogenics"},
+        crafting_categories = {"hydraulic-washing","fluorination","cryogenics","chemistry"},
         crafting_speed = 2,
         energy_source =
         {
